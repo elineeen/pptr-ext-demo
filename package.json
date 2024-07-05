@@ -1,0 +1,28 @@
+{
+  "name": "env-pptr",
+  "packageManager": "yarn@3.6.1",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:firefox": "pnpm i && TARGET=firefox vite",
+    "build": "vite build",
+    "build:firefox": "pnpm i && tsc && TARGET=firefox vite build"
+  },
+  "dependencies": {
+    "@vue/shared": "^3.4.31",
+    "axios": "^1.4.0",
+    "lodash-es": "^4.17.21",
+    "puppeteer-core": "^22.12.1",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vue/compiler-sfc": "^3.3",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^5.3.1",
+    "vite-plugin-web-extension": "^4.1.4"
+  }
+}
